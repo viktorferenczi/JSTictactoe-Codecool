@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href = "/styles.css" />
-    <title>Javascript games Viktor</title>
+    <title>JS Tictactoe Viktor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="button-wrapper">
-          <p>Choose a game you want to try. Source code(feel free to use/edit):<a href="https://github.com/viktorferenczi/JavascriptGames-Codecool.git" target="_blank"> here.</a></p>
-          
-          <a class="memory-button" href="/MemoryGame.html">Memory Game</a>
-          <a class="tictactoe-button" href="/TicTacToe.html">TicTacToe</a>
-        </div>
-      </div>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winnigMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
 </body>
 </html>
